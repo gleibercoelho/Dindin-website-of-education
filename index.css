@@ -130,6 +130,9 @@ table {
 }
 
 html,
+/* reset de todo css acima */
+
+/* Cabecalho das paginas  abaixo */
 body {
     font-family: 'Segoe UI';
 }
@@ -144,7 +147,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 82px;
+    padding-left: 128px;
     padding-top: 20px;
     padding-bottom: 26px;
     padding-right: 103px;
@@ -163,6 +166,8 @@ body {
     color: #fdfdfd;
     text-transform: uppercase;
 }
+
+/* home  abaixo */
 
 .main-home {
     display: flex;
@@ -184,6 +189,7 @@ body {
     width: 1440px;
     height: 829px;
     background-color: #f6f6f6;
+    padding-left: 128px;
 
 }
 
@@ -204,7 +210,6 @@ body {
     color: #555;
     margin-top: 19px;
     margin-bottom: 47px;
-
 }
 
 .main-banner a {
@@ -234,8 +239,6 @@ body {
     height: 730px;
     padding-top: 109px;
     padding-bottom: 119px;
-
-
 }
 
 .main-cursos article {
@@ -260,7 +263,6 @@ body {
     text-align: center;
     margin-top: 23px;
     margin-bottom: 26px;
-
 }
 
 .main-cursos article a {
@@ -274,10 +276,7 @@ body {
     width: 233px;
     height: 51px;
     text-decoration: none;
-
     margin-left: 90px;
-
-
 }
 
 .main-cursos .image1 {
@@ -306,7 +305,6 @@ body {
     flex-direction: column;
     padding-left: 128px;
     background-color: #f6f6f6;
-
 }
 
 .main-avaliacao h3 {
@@ -318,7 +316,6 @@ body {
     color: #009688;
     margin-bottom: 78px;
     margin-top: 119px;
-
 }
 
 .main-avaliacao-div {
@@ -327,13 +324,8 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
     padding-right: 120px;
-
 }
-
-
-
 
 .main-avaliacao-div article {
     display: flex;
@@ -341,16 +333,12 @@ body {
     flex-wrap: nowrap !important;
     padding-right: 30px;
     margin-bottom: 49px;
-
-
 }
 
 .main-avaliacao-div article div {
     display: flex;
     flex-direction: column;
-
 }
-
 
 .main-avaliacao img {
     width: 104px;
@@ -399,15 +387,10 @@ body {
     display: flex;
     flex-direction: row;
     padding-left: 128px;
-
-
 }
 
 .main-blog .container article {
-
     padding-right: 45px;
-
-
 }
 
 .main-blog .container article h4 {
@@ -430,8 +413,6 @@ body {
 .main-blog .link {
     display: flex;
     justify-content: center;
-
-
 }
 
 .main-blog a {
@@ -447,6 +428,105 @@ body {
     padding: 11px 41px;
 }
 
+/* pagina de contato abaixo */
+
+.contato-main {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    font-family: 'Segoe UI';
+}
+
+.contato-main form h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #FF4081;
+    width: 154px;
+    height: 46px;
+}
+
+.contato-main form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 128px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 105px;
+    width: 493px;
+}
+
+.contato-main form::placeholder {
+    color: #58555D;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+}
+
+.contato-main form input {
+    margin-top: 15px;
+    background: #FFFFFF;
+    border: 1px solid #686868;
+    border-radius: 7px;
+}
+
+.contato-main form textarea {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 15px;
+    background: #FFFFFF;
+    border: 1px solid #686868;
+    border-radius: 7px;
+    width: 493px;
+    height: 193px;
+}
+
+.contato-main form textarea::placeholder {
+    color: #58555D;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+}
+
+.contato-main form button {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #FF4081;
+    border-radius: 50px;
+    border: #ff4081;
+    width: 93px;
+    height: 22px;
+    margin-top: 15px;
+    margin-bottom: 102px;
+    cursor: pointer;
+}
+
+
+
+.contato-main img{
+    width: 444px;
+    height: 444px;
+    margin-top: 82px;
+    margin-left: 130px;
+    margin-bottom: 92px;
+    
+}
+
+/* footer  abaixo */
+
 #footer {
     background-color: #2e948a;
     display: flex;
@@ -456,7 +536,7 @@ body {
     padding: 50px;
 }
 
-#footer .nav ul li{
+#footer .nav ul li {
     display: flex;
     flex-direction: column;
     font-weight: 400;
@@ -469,8 +549,8 @@ body {
 
 }
 
-#footer .professor ul li{
-    
+#footer .professor ul li {
+
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
