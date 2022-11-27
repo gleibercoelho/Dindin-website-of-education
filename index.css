@@ -184,11 +184,12 @@ body {
 .main-banner {
     display: flex;
     justify-content: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     width: 1440px;
     height: 829px;
-    background-color: #f6f6f6;
+    background-color: #fff;
     padding-left: 128px;
 
 }
@@ -219,8 +220,7 @@ body {
     line-height: 31px;
     color: #ff4081;
     box-sizing: border-box;
-    width: 216px;
-    height: 21px;
+
     border: 2px solid #ff4081;
     border-radius: 62px;
     padding: 8px 26px;
@@ -238,11 +238,12 @@ body {
     padding-right: 128px;
     height: 730px;
     padding-top: 109px;
-    padding-bottom: 119px;
+    background-color: #F7F7F7;
 }
 
 .main-cursos article {
     align-items: center;
+    align-content: center;
     justify-content: center;
     padding: 22px;
 }
@@ -262,7 +263,10 @@ body {
     line-height: 20px;
     text-align: center;
     margin-top: 23px;
-    margin-bottom: 26px;
+    margin-bottom: 80px;
+    padding-left: 35px;
+    width: 239px;
+    height: 60px;
 }
 
 .main-cursos article a {
@@ -273,10 +277,11 @@ body {
     color: #FFFFFF;
     background: #FF4081;
     border-radius: 62px;
-    width: 233px;
-    height: 51px;
+    width: 216px;
+    height: 20px;
     text-decoration: none;
     margin-left: 90px;
+    padding: 8px 15px;
 }
 
 .main-cursos .image1 {
@@ -299,12 +304,12 @@ body {
 
 .main-avaliacao {
     font-family: 'Segoe UI';
-    height: 701px;
+    height: 800px;
     width: 1440px;
     display: flex;
     flex-direction: column;
     padding-left: 128px;
-    background-color: #f6f6f6;
+    background-color: #fff;
 }
 
 .main-avaliacao h3 {
@@ -371,6 +376,7 @@ body {
     flex-direction: column;
     width: 1440px;
     height: 730px;
+    background-color: #F7F7F7;
 }
 
 .main-blog h3 {
@@ -486,6 +492,7 @@ body {
     border-radius: 7px;
     width: 493px;
     height: 193px;
+    resize: none;
 }
 
 .contato-main form textarea::placeholder {
@@ -516,13 +523,13 @@ body {
 
 
 
-.contato-main img{
+.contato-main img {
     width: 444px;
     height: 444px;
     margin-top: 82px;
     margin-left: 130px;
     margin-bottom: 92px;
-    
+
 }
 
 /* footer  abaixo */
@@ -561,4 +568,344 @@ body {
     box-sizing: border-box;
     padding: 10px;
     margin: 9px;
+}
+
+@media screen and (max-width: 1260px) {
+
+    #header {
+        width: 100%;
+    }
+
+    .main-banner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        height: 980px;
+        padding: 15px;
+
+
+    }
+
+    .main-banner img {
+        margin-top: 65px;
+    }
+
+    .main-avaliacao {
+        width: 100%;
+        height: 1180px;
+        padding-left: 25px;
+        align-items: center;
+        justify-items: center;
+
+    }
+
+    .main-avaliacao h3 {
+        width: 239px;
+        height: 25px;
+        font-size: 19px;
+        line-height: 10px;
+        margin-bottom: 39px;
+        margin-top: 60px;
+    }
+
+    .main-avaliacao-div {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .main-avaliacao-div article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-right: 0px;
+    }
+
+    .main-avaliacao img {
+        width: 95px;
+        height: 95px;
+        margin-right: 0px;
+    }
+
+    .main-avaliacao p {
+        text-align: justify;
+    }
+
+    .main-blog {
+        width: 100%;
+        height: 1400px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .main-blog .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main-blog .container article h4 {
+        align-items: center;
+        padding-left: 35%;
+    }
+
+    .main-blog a {
+        width: 180px;
+        height: 31px;
+        font-size: 20px;
+    }
+
+    #footer {
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    #footer img {
+        width: 156px;
+        height: 50px;
+    }
+
+    #footer .nav ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .main-blog a {
+        width: 180px;
+        height: 31px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #header {
+        width: 100%;
+    }
+
+    #header nav img {
+        width: 122px;
+        height: 36px;
+    }
+
+    #header nav {
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    #header nav ul {
+        width: 155px;
+        font-size: 15px;
+        font-weight: 500;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    #header nav ul li {
+        padding: 10px;
+    }
+
+    .main-banner {
+
+        width: 768px;
+        height: 768px;
+        align-items: flex-start;
+        padding-left: 0;
+        background-color: #fff;
+
+    }
+
+    .main-banner h1 {
+        font-size: 30px;
+        width: 244px;
+        line-height: 40px;
+        margin-top: 19px;
+        height: 108px;
+    }
+
+    .main-banner h2 {
+        width: 230px;
+        margin-top: 0px;
+        margin-bottom: 47px;
+        height: 30px;
+        margin-top: 19px;
+        margin-bottom: 87px;
+    }
+
+    .main-banner article img {
+        width: 250px;
+        height: 261px;
+    }
+
+    .main-banner a {
+        width: 105px;
+        padding: 4px 13px;
+        font-size: 27px;
+        width: 108px;
+        height: 21px;
+    }
+
+    .main-cursos {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 1230px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+    }
+
+    .main-cursos article {}
+
+    .main-cursos article h2 {
+        margin-top: 15px;
+    }
+
+    .main-cursos article p {
+        margin-top: 12px;
+        margin-bottom: 45px;
+
+    }
+
+    .main-cursos article a {
+        width: 115px;
+        height: 25px;
+        font-size: 15px;
+        margin-left: 35%;
+        padding: 4px 10px;
+    }
+
+    .main-cursos .image1 {
+        width: 144px;
+        height: 135px;
+        padding-left: 35%;
+    }
+
+    .main-cursos .image2 {
+        width: 119px;
+        height: 135px;
+        padding-left: 35%;
+    }
+
+    .main-cursos .image3 {
+        width: 94px;
+        height: 135px;
+        padding-left: 35%;
+    }
+
+    .main-avaliacao {
+        width: 100%;
+        height: 1180px;
+
+        padding-left: 25px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .main-avaliacao h3 {
+        width: 239px;
+        height: 25px;
+        font-size: 19px;
+        line-height: 10px;
+        margin-bottom: 39px;
+        margin-top: 60px;
+    }
+
+    .main-avaliacao-div {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .main-avaliacao-div article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-right: 0px;
+    }
+
+    .main-avaliacao img {
+        width: 95px;
+        height: 95px;
+        margin-right: 0px;
+    }
+
+    .main-avaliacao p {
+        text-align: justify;
+    }
+
+    .main-blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 1300px;
+    }
+
+    .main-blog h3 {
+        font-size: 18px;
+        padding-left: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .main-blog .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+        padding-left: 0px;
+    }
+
+    .main-blog .container article h4 {
+        text-align: center;
+    }
+
+    .main-blog .container article {
+        padding-right: 0px;
+    }
+
+    .main-blog a {
+        width: 180px;
+        height: 31px;
+        font-size: 20px;
+    }
+
+    #footer {
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    #footer img {
+        width: 156px;
+        height: 50px;
+    }
+
+    #footer .nav ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
 }
