@@ -236,9 +236,11 @@ body {
     flex-direction: row;
     padding-left: 128px;
     padding-right: 128px;
+    width: 1440px;
     height: 730px;
     padding-top: 109px;
     background-color: #F7F7F7;
+
 }
 
 .main-cursos article {
@@ -255,6 +257,7 @@ body {
     color: #ff4081;
     text-align: center;
     margin-top: 43px;
+    padding-left: 50px;
 }
 
 .main-cursos article p {
@@ -439,6 +442,7 @@ body {
 .contato-main {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #fff;
     font-family: 'Segoe UI';
 }
@@ -574,7 +578,9 @@ body {
 
     #header {
         width: 100%;
+        padding: 0;
     }
+
 
     .main-banner {
         flex-direction: row;
@@ -589,6 +595,14 @@ body {
 
     .main-banner img {
         margin-top: 65px;
+    }
+
+    .main-cursos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 1230px;
+        width: 100%;
     }
 
     .main-avaliacao {
@@ -644,11 +658,14 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
     }
 
-    .main-blog .container article h4 {
-        align-items: center;
-        padding-left: 35%;
+    .main-blog .container article h {
+        text-align: left;
+
     }
 
     .main-blog a {
@@ -680,6 +697,46 @@ body {
         width: 180px;
         height: 31px;
         font-size: 20px;
+    }
+
+    #footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .main-cursos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 1230px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    main-cursos article p {
+        margin-top: 12px;
+        margin-bottom: 45px;
+    }
+
+
+    .main-cursos .image1 {
+        width: 144px;
+        height: 135px;
+        padding-left: 35%;
+    }
+
+    .main-cursos .image2 {
+        width: 119px;
+        height: 135px;
+        padding-left: 35%;
+    }
+
+    .main-cursos .image3 {
+        width: 94px;
+        height: 135px;
+        padding-left: 35%;
     }
 }
 
@@ -897,6 +954,7 @@ body {
     }
 
     #footer img {
+        margin-top: 15px;
         width: 156px;
         height: 50px;
     }
@@ -909,3 +967,95 @@ body {
     }
 
 }
+
+/* responsividade da pagina de contatos abaixo */
+@media screen and (max-width: 1195px) {
+    .contato-main {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        align-items: left;
+    }
+
+    .contato-main form {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .contato-main form input {
+        width: 720PX;
+    }
+
+    .contato-main form textarea {
+        width: 720PX;
+    }
+
+    .contato-main form button{
+        margin-bottom: 0px;
+    }
+
+    .contato-main img{
+        margin: 0;
+        padding: 0;
+        padding-left: 5%;
+
+    }
+}
+
+    @media screen and (max-width: 768px) {
+
+        .contato-main {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            align-items: center;
+        }
+
+        .contato-main form h2 {
+            font-size: 30px;
+            padding: 0;
+            margin-top: 0;
+        }
+
+        .contato-main form {
+            padding: 15px;
+            padding-right: 0;
+            width: 400px;
+            margin-top: 0;
+        }
+
+        .contato-main form::placeholder {
+            font-size: 10PX;
+        }
+
+        .contato-main form input {
+            width: 340PX;
+            font-size: 10px;
+        }
+
+        .contato-main form textarea {
+            width: 340PX;
+            font-size: 10px;
+        }
+
+        .contato-main form textarea::placeholder {
+            font-size: 10PX;
+        }
+
+        .contato-main form button {
+            margin-bottom: 15px;
+        }
+
+        .contato-main img {
+            width: 222px;
+            height: 222px;
+            margin: 0;
+            padding: 0;
+            margin-left: 0px;
+            padding-bottom: 30px;
+        }
+    }
