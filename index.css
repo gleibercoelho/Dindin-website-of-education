@@ -534,15 +534,169 @@ body {
     cursor: pointer;
 }
 
-
-
 .contato-main img {
     width: 444px;
     height: 444px;
     margin-top: 82px;
     margin-left: 130px;
     margin-bottom: 92px;
+}
 
+/* pagina de post do blogs abaixo*/
+
+.main-blog-internal {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-blog-internal section {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 204px;
+    padding-right: 204px;
+    width: 1032px;
+    flex-wrap: wrap;
+}
+
+.main-blog-internal section h2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 57px;
+    color: #FF4081;
+    margin-top: 110px;
+    align-self: center;
+}
+
+.main-blog-internal section span {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #9D9D9D;
+    margin-top: 12px;
+    align-self: center;
+}
+
+.main-blog-internal section img {
+    width: 1032px;
+    height: 465px;
+    margin-top: 74px;
+    padding-left: 0px;
+    padding-left: 0px;
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.main-blog-internal section p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-align: justify;
+    
+}
+
+.main-blog-internal section h3 {
+    color: #419488;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 21px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.main-blog-cursos {
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: nowrap;
+    width: 1440px;
+    height: 899px;
+    margin-top: 110px;
+    background-color: #F7F7F7;
+}
+
+.main-blog-cursos h3 {
+    align-self: center;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 57px;
+    color: #FF4081;
+    align-self: center;
+    margin-bottom: 100px;
+    padding-top: 80px;
+}
+
+.main-blog-cursos div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: space-around;
+    justify-content: space-around;
+    width: 1440px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.main-blog-cursos div article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-around;
+    justify-content: space-around;
+    width: 344px;
+    padding-right: 5px;
+}
+
+.main-blog-cursos div article .blog-img1 {
+    width: 288px;
+    height: 279px;
+}
+
+.main-blog-cursos div article .blog-img2 {
+    width: 238px;
+    height: 279px;
+}
+
+.main-blog-cursos div article .blog-img3 {
+    width: 187px;
+    height: 279px;
+}
+
+.main-blog-cursos div article h4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: justify;
+    color: #FF4081;
+    margin-top: 52px;
+}
+
+.main-blog-cursos div article p {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: justify;
+    color: #000000;
+    Width: 293px;
+    Height: 73.89px;
+    margin-top: 28px;
+    margin-bottom: 70px;
+}
+
+.main-blog-cursos div article a {
+    text-decoration: none;
+    width: 216px;
+    height: 25px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF4081;
+    border-radius: 62px;
+    padding: 10px 20px;
 }
 
 /* footer  abaixo */
@@ -583,7 +737,7 @@ body {
     margin: 9px;
 }
 
-#footer a{
+#footer a {
     text-decoration: none;
 }
 
@@ -690,364 +844,415 @@ body {
     }
 }
 
-    @media screen and (max-width: 890px) {
-        .main-cursos {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            
-            padding-left: 0;      
-           
-        }
+@media screen and (max-width: 890px) {
+    .main-cursos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
 
-        .main-cursos article p {
-            margin-top: 12px;
-            margin-bottom: 45px;
-        }
-
-
-        .main-cursos .image1 {
-            width: 144px;
-            height: 135px;
-            padding-left: 35%;
-        }
-
-        .main-cursos .image2 {
-            width: 119px;
-            height: 135px;
-            padding-left: 35%;
-        }
-
-        .main-cursos .image3 {
-            width: 94px;
-            height: 135px;
-            padding-left: 35%;
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-
-        #header {
-            width: 100%;
-            
-        }
-
-        #header nav img {
-            width: 122px;
-            height: 36px;
-        }
-
-        #header nav {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            align-content: center;
-            width: 100%;
-            padding: 10px;
-            flex-wrap: wrap;
-        }
-
-        #header nav ul {
-            width: 155px;
-            font-size: 15px;
-            font-weight: 500;
-            justify-content: space-evenly;
-            align-items: center;
-            align-content: center;
-
-        }
-
-        #header nav ul li {
-            padding: 10px;
-            
-        }
-
-        .main-banner {
-
-            width: 768px;
-            height: 768px;
-            align-items: flex-start;
-            padding-left: 0;
-            background-color: #fff;
-
-        }
-
-        .main-banner h1 {
-            font-size: 30px;
-            width: 244px;
-            line-height: 40px;
-            margin-top: 19px;
-            height: 108px;
-        }
-
-        .main-banner h2 {
-            width: 230px;
-            margin-top: 0px;
-            margin-bottom: 47px;
-            height: 30px;
-            margin-top: 19px;
-            margin-bottom: 87px;
-        }
-
-        .main-banner article img {
-            width: 250px;
-            height: 261px;
-        }
-
-        .main-banner a {
-            width: 105px;
-            padding: 4px 13px;
-            font-size: 27px;
-            width: 108px;
-            height: 21px;
-        }
-
-        .main-cursos {
-            flex-direction: column;
-            flex-wrap: wrap;
-            padding-left: 0px;
-            padding-right: 0px;
-            height: 1230px;
-            align-items: center;
-            justify-content: center;
-            padding-top: 0px;
-            padding-bottom: 0px;
-            width: 100%;
-        }
-
-
-
-        .main-cursos article h2 {
-            margin-top: 15px;
-        }
-
-        .main-cursos article p {
-            margin-top: 12px;
-            margin-bottom: 45px;
-
-        }
-
-        .main-cursos article a {
-            width: 115px;
-            height: 25px;
-            font-size: 15px;
-            margin-left: 35%;
-            padding: 4px 10px;
-        }
-
-        .main-cursos .image1 {
-            width: 144px;
-            height: 135px;
-            padding-left: 35%;
-        }
-
-        .main-cursos .image2 {
-            width: 119px;
-            height: 135px;
-            padding-left: 35%;
-        }
-
-        .main-cursos .image3 {
-            width: 94px;
-            height: 135px;
-            padding-left: 35%;
-        }
-
-        .main-avaliacao {
-            width: 100%;
-            height: 1180px;
-
-            padding-left: 25px;
-            align-items: center;
-            justify-items: center;
-        }
-
-        .main-avaliacao h3 {
-            width: 239px;
-            height: 25px;
-            font-size: 19px;
-            line-height: 10px;
-            margin-bottom: 39px;
-            margin-top: 60px;
-        }
-
-        .main-avaliacao-div {
-            display: flex;
-            flex-direction: column;
-            padding-right: 0;
-        }
-
-        .main-avaliacao-div article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-            padding-right: 0px;            
-            width: 345px;
-        }
-
-        .main-avaliacao img {
-            width: 95px;
-            height: 95px;
-            margin-right: 0px;
-        }
-
-        .main-avaliacao p {
-            text-align: justify;
-            width: 320px;
-            
-        }
-
-        .main-blog {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: 1300px;
-        }
-
-        .main-blog h3 {
-            font-size: 18px;
-            padding-left: 0px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-
-        .main-blog .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-            padding: 0;
-            padding-left: 0px;
-        }
-
-        .main-blog .container article h4 {
-            text-align: center;
-        }
-
-        .main-blog .container article {
-            padding-right: 0px;
-        }
-
-        .main-blog a {
-            width: 180px;
-            height: 31px;
-            font-size: 20px;
-        }
-
-        #footer {
-            width: 100%;
-            padding: 0;
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
-        }
-
-        #footer img {
-            margin-top: 15px;
-            width: 156px;
-            height: 50px;
-        }
-
-        #footer .nav ul {
-            display: flex;
-            flex-direction: row;
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
+        padding-left: 0;
 
     }
 
-    /* responsividade da pagina de contatos abaixo */
-    @media screen and (max-width: 1195px) {
-        .contato-main {
-            display: flex;
-            flex-direction: column;
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            align-items: left;
-        }
-
-        .contato-main form {
-            padding: 15px;
-            margin: 0;
-        }
-
-        .contato-main form input {
-            width: 720PX;
-        }
-
-        .contato-main form textarea {
-            width: 720PX;
-        }
-
-        .contato-main form button {
-            margin-bottom: 0px;
-        }
-
-        .contato-main img {
-            margin: 0;
-            padding: 0;
-            padding-left: 5%;
-
-        }
+    .main-cursos article p {
+        margin-top: 12px;
+        margin-bottom: 45px;
     }
 
-    @media screen and (max-width: 768px) {
 
-        .contato-main {
-            display: flex;
-            flex-direction: column;
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            align-items: center;
-        }
-
-        .contato-main form h2 {
-            font-size: 30px;
-            padding: 0;
-            margin-top: 0;
-        }
-
-        .contato-main form {
-            padding: 15px;
-            padding-right: 0;
-            width: 400px;
-            margin-top: 0;
-        }
-
-        .contato-main form::placeholder {
-            font-size: 10PX;
-        }
-
-        .contato-main form input {
-            width: 340PX;
-            font-size: 10px;
-        }
-
-        .contato-main form textarea {
-            width: 340PX;
-            font-size: 10px;
-        }
-
-        .contato-main form textarea::placeholder {
-            font-size: 10PX;
-        }
-
-        .contato-main form button {
-            margin-bottom: 15px;
-        }
-
-        .contato-main img {
-            width: 222px;
-            height: 222px;
-            margin: 0;
-            padding: 0;
-            margin-left: 0px;
-            padding-bottom: 30px;
-        }
+    .main-cursos .image1 {
+        width: 144px;
+        height: 135px;
+        padding-left: 35%;
     }
+
+    .main-cursos .image2 {
+        width: 119px;
+        height: 135px;
+        padding-left: 35%;
+    }
+
+    .main-cursos .image3 {
+        width: 94px;
+        height: 135px;
+        padding-left: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #header {
+        width: 100%;
+
+    }
+
+    #header nav img {
+        width: 122px;
+        height: 36px;
+    }
+
+    #header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    #header nav ul {
+        width: 155px;
+        font-size: 15px;
+        font-weight: 500;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    #header nav ul li {
+        padding: 10px;
+
+    }
+
+    .main-banner {
+
+        width: 768px;
+        height: 768px;
+        align-items: flex-start;
+        padding-left: 0;
+        background-color: #fff;
+
+    }
+
+    .main-banner h1 {
+        font-size: 30px;
+        width: 244px;
+        line-height: 40px;
+        margin-top: 19px;
+        height: 108px;
+    }
+
+    .main-banner h2 {
+        width: 230px;
+        margin-top: 0px;
+        margin-bottom: 47px;
+        height: 30px;
+        margin-top: 19px;
+        margin-bottom: 87px;
+    }
+
+    .main-banner article img {
+        width: 250px;
+        height: 261px;
+    }
+
+    .main-banner a {
+        width: 105px;
+        padding: 4px 13px;
+        font-size: 27px;
+        width: 108px;
+        height: 21px;
+    }
+
+    .main-cursos {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 1230px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+    }
+
+
+
+    .main-cursos article h2 {
+        margin-top: 15px;
+    }
+
+    .main-cursos article p {
+        margin-top: 12px;
+        margin-bottom: 45px;
+
+    }
+
+    .main-cursos article a {
+        width: 115px;
+        height: 25px;
+        font-size: 15px;
+        margin-left: 35%;
+        padding: 4px 10px;
+    }
+
+    .main-cursos .image1 {
+        width: 144px;
+        height: 135px;
+        padding-left: 35%;
+    }
+
+    .main-cursos .image2 {
+        width: 119px;
+        height: 135px;
+        padding-left: 35%;
+    }
+
+    .main-cursos .image3 {
+        width: 94px;
+        height: 135px;
+        padding-left: 35%;
+    }
+
+    .main-avaliacao {
+        width: 100%;
+        height: 1180px;
+
+        padding-left: 25px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .main-avaliacao h3 {
+        width: 239px;
+        height: 25px;
+        font-size: 19px;
+        line-height: 10px;
+        margin-bottom: 39px;
+        margin-top: 60px;
+    }
+
+    .main-avaliacao-div {
+        display: flex;
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .main-avaliacao-div article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-right: 0px;
+        width: 345px;
+    }
+
+    .main-avaliacao img {
+        width: 95px;
+        height: 95px;
+        margin-right: 0px;
+    }
+
+    .main-avaliacao p {
+        text-align: justify;
+        width: 320px;
+
+    }
+
+    .main-blog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 1300px;
+    }
+
+    .main-blog h3 {
+        font-size: 18px;
+        padding-left: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .main-blog .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+        padding-left: 0px;
+    }
+
+    .main-blog .container article h4 {
+        text-align: center;
+    }
+
+    .main-blog .container article {
+        padding-right: 0px;
+    }
+
+    .main-blog a {
+        width: 180px;
+        height: 31px;
+        font-size: 20px;
+    }
+
+    #footer {
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+
+    #footer img {
+        margin-top: 15px;
+        width: 156px;
+        height: 50px;
+    }
+
+    #footer .nav ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
+
+
+/* responsividade da pagina post do blog abaixo */
+@media screen and (max-width: 768px) {
+
+    .main-blog-internal section {
+        padding: 15px;
+        width: 100%;
+        min-width: 330px;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        
+    }
+
+    .main-blog-internal section h2 {
+        font-size: 25px;
+        margin-top: 55px;
+        align-self: flex-start;
+        line-break: auto;
+        padding-right: 25px;
+        line-height: 25px;
+    }
+
+    .main-blog-internal section span {
+        font-size: 10px;
+        margin-top: 6px;
+        align-self: flex-start;
+    }
+
+    .main-blog-internal section img {
+        width: 330px;
+        height: 232px;
+        padding-right: 15px;
+    }
+    .main-blog-internal section p{
+        font-size: 12px;
+        line-height: 15px;
+        padding-right: 40px;
+    }
+
+    .main-blog-internal section h3{
+        font-size: 15px;
+        font-weight: 500;
+        line-break: auto;
+        padding-right: 30px;
+        
+    }
+}
+
+
+
+/* responsividade da pagina de contatos abaixo */
+@media screen and (max-width: 1195px) {
+    .contato-main {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        align-items: left;
+    }
+
+    .contato-main form {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .contato-main form input {
+        width: 720PX;
+    }
+
+    .contato-main form textarea {
+        width: 720PX;
+    }
+
+    .contato-main form button {
+        margin-bottom: 0px;
+    }
+
+    .contato-main img {
+        margin: 0;
+        padding: 0;
+        padding-left: 5%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contato-main {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .contato-main form h2 {
+        font-size: 30px;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .contato-main form {
+        padding: 15px;
+        padding-right: 0;
+        width: 400px;
+        margin-top: 0;
+    }
+
+    .contato-main form::placeholder {
+        font-size: 10PX;
+    }
+
+    .contato-main form input {
+        width: 340PX;
+        font-size: 10px;
+    }
+
+    .contato-main form textarea {
+        width: 340PX;
+        font-size: 10px;
+    }
+
+    .contato-main form textarea::placeholder {
+        font-size: 10PX;
+    }
+
+    .contato-main form button {
+        margin-bottom: 15px;
+    }
+
+    .contato-main img {
+        width: 222px;
+        height: 222px;
+        margin: 0;
+        padding: 0;
+        margin-left: 0px;
+        padding-bottom: 30px;
+    }
+}
