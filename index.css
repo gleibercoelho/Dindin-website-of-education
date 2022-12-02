@@ -194,7 +194,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 1440px;
+    width: 100%;
     height: 829px;
     background-color: #fff;
     padding-left: 128px;
@@ -245,7 +245,7 @@ body {
     justify-content: space-around;
     padding-left: 128px;
     padding-right: 128px;
-    width: 1440px;
+    width: 100%;
     height: 730px;
     padding-top: 109px;
     background-color: #F7F7F7;
@@ -317,7 +317,7 @@ body {
 .main-avaliacao {
     font-family: 'Segoe UI';
     height: 800px;
-    width: 1440px;
+    
     display: flex;
     flex-direction: column;
     padding-left: 128px;
@@ -386,7 +386,7 @@ body {
     font-family: 'Segoe UI';
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     height: 730px;
     background-color: #F7F7F7;
 }
@@ -405,6 +405,7 @@ body {
     display: flex;
     flex-direction: row;
     padding-left: 128px;
+    justify-content: space-around;
 }
 
 .main-blog .container article {
@@ -446,7 +447,271 @@ body {
     padding: 11px 41px;
 }
 
-/* pagina de contato abaixo */
+.main-blog .container .fotolink{
+    padding: 0;
+    border: none;
+
+}
+
+/*  --------------------------------------pagina de cursos abaixo -----------------------------------------*/
+
+.cursos-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cursos-main .cursos-header {
+    background-color: #FFFFFF;
+    margin-left: 89px;
+    margin-top: 81px;
+    margin-bottom: 95px;
+}
+
+.cursos-main .cursos-header h2 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 69px;
+    color: #FF4081;
+}
+
+.cursos-main .cursos-header p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.cursos-main .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cursos-main .container .curso1 {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    align-content: space-around;
+}
+
+.cursos-main .container .cursosimg1 {
+    width: 380px;
+    height: 381px;
+    padding-left: 112px;
+    padding-bottom: 68px;
+}
+
+.cursos-main .container h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FF4081;
+}
+
+.cursos-main .container p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    width: 724px;
+    height: 105px;
+    padding-top: 37px;
+    padding-bottom: 53px;
+}
+
+.cursos-main .container a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #419488;
+    border-radius: 62px;
+    width: 216px;
+    height: 25px;
+    padding: 9px 13px;
+}
+
+.cursos-main .container .curso2 {
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.cursos-main .container .cursosimg2 {
+    width: 380px;
+    height: 385px;
+    margin-left: 112px;
+    margin-top: 107px;
+    margin-bottom: 93px;
+}
+
+.cursos-main .container .curso2 h2 {
+    padding-top: 108px;
+}
+
+.cursos-main .container .curso2::before {
+    content: "";
+    width: 80%;
+    height: 5px;
+    background: #C4C4C4;
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 834px;
+}
+
+.cursos-main .container .curso2::after {
+    content: "";
+    width: 80%;
+    height: 5px;
+    background: #C4C4C4;
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 1424px;
+}
+
+.cursos-main .container .curso3 {
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.cursos-main .container .curso3 .cursosimg3 {
+    width: 380px;
+    height: 498px;
+    margin-left: 128px;
+    margin-top: 93px;
+    margin-bottom: 411px;
+}
+
+.cursos-main .container .curso3 h2 {
+    margin-top: 152px;
+}
+
+/* --------------------------------------pagina de aulas do curso abaixo ----------------------------------*/
+
+.aulas-main {
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.aula-banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-left: 225px;
+    height: 580px;
+}
+
+.aula-banner h2 {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 63px;
+    color: #FF4081;
+    margin-top: 92px;
+    width: 512px;
+}
+
+.aula-banner p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    width: 461px;
+    height: 186px;
+    margin-top: 30px;
+    margin-bottom: 115px;
+}
+
+.aula-banner img {
+    width: 380px;
+    height: 381px;
+    margin-top: 81px;
+    margin-bottom: 81px;
+}
+
+.aulas-video {
+    background-color: #F7F7F7;
+
+}
+
+.aulas-video iframe {
+    
+    margin-top: 75px;
+    margin-bottom: 75px;
+    width: 426px;
+    height: 261px;
+    margin-left: 213px;
+    
+}
+
+.aulas-video h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FF4081;
+    margin-top: 75px;
+    margin-left: 76px;
+}
+
+.aulas-video p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    margin-left: 76px;
+    margin-top: 26px;
+    line-break: auto;
+    width: 501px;
+    height: 195px;
+    text-align: justify;
+}
+
+.aulas-video article {
+    height: 409px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+
+
+.aulas-video .aula1::before {
+    content: "";
+    background-color: #C4C4C4;
+    display: block;
+    position: absolute;
+    top: 1113px;
+    left: 10%;
+    width: 80%;
+    height: 5px;
+}
+
+.aulas-video .aula1::after {
+    content: "";
+    background-color: #C4C4C4;
+    display: block;
+    position: absolute;
+    top: 1520px;
+    left: 10%;
+    width: 80%;
+    height: 5px;
+}
+
+/* --------------------------------------pagina de contato abaixo -----------------------------------------*/
 
 .contato-main {
     display: flex;
@@ -454,6 +719,7 @@ body {
     flex-wrap: wrap;
     background-color: #fff;
     font-family: 'Segoe UI';
+    justify-content: space-around;
 }
 
 .contato-main form h2 {
@@ -542,7 +808,93 @@ body {
     margin-bottom: 92px;
 }
 
-/* pagina de post do blogs abaixo*/
+/* ------------------------------------- pagina do blog abaixo ------------------------------------- */
+
+.blog-main {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    height: 542px;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.blog-main h3 {
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 54px;
+    color: #009688;
+    width: 512px;
+    height: 108px;
+    padding-top: 122px;
+    padding-left: 239px;
+    padding-bottom: 40px;
+}
+
+.blog-main p {
+    width: 461px;
+    height: 110px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    padding-left: 239px;
+    padding-bottom: 62px;
+}
+
+.blog-main img {
+    width: 405px;
+    height: 405px;
+    padding-top: 25px;
+    padding-bottom: 89px;
+}
+
+.blog-vitrine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 100px;
+    background-color: #E5E5E5;
+    padding-right: 60px;
+}
+
+.blog-vitrine article img {
+    width: 518px;
+    height: 259px;
+    padding-top: 70px;
+    padding-right: 63px;
+
+}
+
+.blog-vitrine article h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    color: #FF4081;
+    margin-top: 20px;
+}
+
+.blog-vitrine article p {
+    width: 516px;
+    height: 80px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 20px;
+    text-align: justify;
+    margin-bottom: 80px;
+}
+
+.blog-vitrine a {
+    text-decoration: none;
+}
+
+
+/* ------------------------------------- pagina de post do blogs abaixo  -------------------------------------*/
 
 .main-blog-internal {
     font-family: 'Segoe UI', Roboto, sans-serif;
@@ -554,10 +906,10 @@ body {
     display: flex;
     flex-direction: column;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding-left: 204px;
     padding-right: 204px;
-    width: 1032px;
+    
     flex-wrap: wrap;
 }
 
@@ -567,7 +919,6 @@ body {
     line-height: 57px;
     color: #FF4081;
     margin-top: 110px;
-    align-self: center;
 }
 
 .main-blog-internal section span {
@@ -576,16 +927,13 @@ body {
     line-height: 21px;
     color: #9D9D9D;
     margin-top: 12px;
-    align-self: center;
+
 }
 
 .main-blog-internal section img {
-    width: 1032px;
-    height: 465px;
+    max-width: 1032px;
+    max-height: 465px;
     margin-top: 74px;
-    padding-left: 0px;
-    padding-left: 0px;
-    display: flex;
     margin-bottom: 64px;
 }
 
@@ -595,7 +943,7 @@ body {
     line-height: 21px;
     color: #000000;
     text-align: justify;
-    
+
 }
 
 .main-blog-internal section h3 {
@@ -605,13 +953,14 @@ body {
     line-height: 21px;
     margin-top: 50px;
     margin-bottom: 25px;
+    align-self: flex-start;
 }
 
 .main-blog-cursos {
     display: flex;
     flex-direction: column !important;
     flex-wrap: nowrap;
-    width: 1440px;
+    
     height: 899px;
     margin-top: 110px;
     background-color: #F7F7F7;
@@ -623,7 +972,6 @@ body {
     font-size: 50px;
     line-height: 57px;
     color: #FF4081;
-    align-self: center;
     margin-bottom: 100px;
     padding-top: 80px;
 }
@@ -634,7 +982,7 @@ body {
     flex-wrap: nowrap;
     align-items: space-around;
     justify-content: space-around;
-    width: 1440px;
+    
     padding-left: 0;
     margin-left: 0;
 }
@@ -643,8 +991,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: space-around;
-    justify-content: space-around;
+
     width: 344px;
     padding-right: 5px;
 }
@@ -699,7 +1046,7 @@ body {
     padding: 10px 20px;
 }
 
-/* footer  abaixo */
+/* ------------------------------------- footer  abaixo ------------------------------------- */
 
 #footer {
     background-color: #2e948a;
@@ -740,6 +1087,8 @@ body {
 #footer a {
     text-decoration: none;
 }
+
+/* ------------------------------------- responsividade home abaixo -------------------------------------*/
 
 @media screen and (max-width: 1260px) {
 
@@ -899,6 +1248,7 @@ body {
         align-content: center;
         width: 100%;
         padding: 10px;
+        padding-right: 0;
         flex-wrap: wrap;
     }
 
@@ -921,6 +1271,7 @@ body {
 
         width: 768px;
         height: 768px;
+        flex-direction: column;
         align-items: flex-start;
         padding-left: 0;
         background-color: #fff;
@@ -1114,8 +1465,238 @@ body {
 
 }
 
+/*------------------------------------- responsividade da pagina de cursos -----------------------------*/
+@media screen and (max-width: 1210px) {
+    .cursos-main .cursos-header {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
 
-/* responsividade da pagina post do blog abaixo */
+    .cursos-main .cursos-header h2 {
+        font-size: 30px;
+    }
+
+    .cursos-main .cursos-header p {
+        font-size: 15px;
+        line-height: 10px;
+    }
+
+    .cursos-main .container {
+        flex-wrap: nowrap;
+    }
+
+    .cursos-main .container .curso1 {
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 700px;
+    }
+
+    .cursos-main .container .cursosimg1 {
+        width: 190px;
+        height: 190px;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+
+    .cursos-main .container h2 {
+        font-size: 20px;
+    }
+
+    .cursos-main .container p {
+        font-size: 12px;
+        line-height: 15px;
+        width: 350px;
+        text-align: justify;
+    }
+
+    .cursos-main .container a {
+        width: 105px;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .cursos-main .container .curso1 a {
+        margin-bottom: 60px;
+    }
+
+
+    .cursos-main .container .curso2 {
+
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 550px;
+
+
+    }
+
+    .cursos-main .container .cursosimg2 {
+        width: 190px;
+        height: 190px;
+        margin-left: 0px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .cursos-main .container .curso2 h2 {
+        padding-top: 40px;
+    }
+
+    .cursos-main .container .curso2 a {
+        margin-bottom: 50px;
+    }
+
+    .cursos-main .container .curso2::before {
+        width: 80%;
+        display: block;
+        position: absolute;
+        top: 905px;
+    }
+
+    .cursos-main .container .curso2::after {
+        width: 80%;
+        display: block;
+        position: absolute;
+        top: 1455px;
+    }
+
+    .cursos-main .container .curso3 {
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 720px;
+    }
+
+    .cursos-main .container .curso3 .cursosimg3 {
+        width: 190px;
+        height: 250px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .cursos-main .container .curso3 h2 {
+        margin-top: 20px;
+    }
+}
+
+/* ------------------------------------- responsividade da pagina aulas curso  abaixo ----------------------*/
+
+
+
+@media screen and (max-width: 1280px) {
+
+    .aula-banner {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 700px;
+    }
+
+    .aula-banner h2 {
+        font-size: 27px;
+        line-height: 30px;
+        width: 255px;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .aula-banner p {
+        font-size: 15px;
+        line-height: 20px;
+        width: 340px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+
+    .aula-banner img {
+        width: 190px;
+        height: 190px;
+        margin-top: 10px;
+    }
+
+    .aulas-video {
+        height: 1300px;
+    }
+
+    .aulas-video iframe {
+        margin: 0;
+        margin-top: 75px;
+        width: 375px;
+
+    }
+
+    .aulas-video h2 {
+        font-size: 27px;
+        line-height: 20px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .aulas-video p {
+        font-size: 15px;
+        line-height: 18px;
+        width: 340px;
+        height: 150px;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 150px;
+    }
+
+    .aulas-video article {
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+    }
+
+    .aulas-video .aula1::before {
+        top: 1290px;
+    }
+
+    .aulas-video .aula1::after {
+        top: 1700px;
+    }
+}
+
+/* ------------------------------------- responsividade da pagina post do blog abaixo ----------------------*/
+
+@media screen and (max-width: 1047px) {
+
+
+    .main-blog-cursos {
+        min-width: 768px;
+        min-height: 1500px;
+        padding: 20px;
+
+
+    }
+
+    .main-blog-cursos div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 768px;
+    }
+
+    .main-blog-cursos div article a {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 1036px) {
+
+    #header {
+        width: 100%;
+    }
+
+    .main-blog-internal section img {
+        max-width: 330px;
+        max-height: 232px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
 
     .main-blog-internal section {
@@ -1123,15 +1704,12 @@ body {
         width: 100%;
         min-width: 330px;
         display: flex;
-        align-content: center;
         align-items: center;
-        
     }
 
     .main-blog-internal section h2 {
         font-size: 25px;
         margin-top: 55px;
-        align-self: flex-start;
         line-break: auto;
         padding-right: 25px;
         line-height: 25px;
@@ -1140,7 +1718,7 @@ body {
     .main-blog-internal section span {
         font-size: 10px;
         margin-top: 6px;
-        align-self: flex-start;
+        
     }
 
     .main-blog-internal section img {
@@ -1148,24 +1726,218 @@ body {
         height: 232px;
         padding-right: 15px;
     }
-    .main-blog-internal section p{
+
+    .main-blog-internal section p {
         font-size: 12px;
         line-height: 15px;
-        padding-right: 40px;
+        padding-right: 0px;
+        width: 300px;
     }
 
-    .main-blog-internal section h3{
+    .main-blog-internal section h3 {
         font-size: 15px;
         font-weight: 500;
         line-break: auto;
         padding-right: 30px;
-        
+        align-self: center;
+        width: 260px;
+    }
+
+    .main-blog-cursos {
+        align-items: center;
+        width: 100%;
+        min-height: 1250px;
+        min-width: 330px;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .main-blog-cursos h3 {
+        font-size: 25px;
+        padding-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .main-blog-cursos div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 330px;
+    }
+
+    .main-blog-cursos div article {
+        align-content: center;
+        align-items: center;
+        min-width: 320px;
+        margin-top: 30px;
+    }
+
+    .main-blog-cursos div article .blog-img1 {
+        width: 144px;
+        height: 140px;
+    }
+
+    .main-blog-cursos div article .blog-img2 {
+        width: 120px;
+        height: 140px;
+    }
+
+    .main-blog-cursos div article .blog-img3 {
+        width: 145px;
+        height: 140px;
+    }
+
+    .main-blog-cursos div article h4 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .main-blog-cursos div article p {
+        font-size: 12px;
+        Width: 200px;
+        Height: 36px;
+        line-height: 15px;
+        margin-top: 15px;
+        margin-bottom: 70px;
+    }
+
+    .main-blog-cursos div article a {
+        font-size: 12px;
+        width: 105px;
+        height: 12px;
+        padding: 5px 10px;
+        line-height: 13px;
+        margin-bottom: 0px;
+    }
+}
+
+
+/* ------------------------------------- responsividade da pagina post do blog abaixo ----------------------*/
+
+
+@media screen and (max-width: 1320px) {
+
+    .blog-main {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 0;
+        height: 1000px;
+    }
+
+    .blog-main h3 {
+        padding-left: 0;
+        width: 461px;
+        text-align: center;
+    }
+
+    .blog-main p {
+        padding-left: 0;
+        text-align: justify;
+    }
+
+    .blog-vitrine {
+        padding-left: 15px;
+        align-content: space-around;
+        justify-content: space-around;
+    }
+
+    .blog-vitrine article {
+        margin-left: 20px;
+    }
+
+    .blog-vitrine article img {
+        width: 400px;
+        height: 210px;
+        padding-right: 0;
+    }
+
+    .blog-vitrine article h2 {
+
+
+        width: 300px;
+        text-align: flex-start;
+    }
+
+    .blog-vitrine article p {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .blog-main {
+        align-items: center;
+        max-height: 470px;
+
+    }
+
+    .blog-main h3 {
+        font-size: 24px;
+        line-break: auto;
+        padding: 0;
+        line-height: 25px;
+        width: 255px;
+        height: 55px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .blog-main p {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0;
+        width: 230px;
+        height: 55px;
+        text-align: justify;
+        margin-bottom: 60px;
+    }
+
+    .blog-main img {
+        width: 200px;
+        height: 200px;
+        padding: 0;
+    }
+
+    .blog-vitrine {
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .blog-vitrine article img {
+        width: 300px;
+        height: 190px;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .blog-vitrine article h2 {
+        font-size: 15px;
+        margin-top: 10px;
+
+    }
+
+    .blog-vitrine article p {
+        font-size: 12px;
+        line-height: 12px;
+        width: 300px;
+        height: 50px;
+        margin-top: 10px;
+
     }
 }
 
 
 
-/* responsividade da pagina de contatos abaixo */
+/* ------------------------------------- responsividade da pagina de contatos abaixo -------------------------------------*/
 @media screen and (max-width: 1195px) {
     .contato-main {
         display: flex;
@@ -1196,7 +1968,7 @@ body {
     .contato-main img {
         margin: 0;
         padding: 0;
-        padding-left: 5%;
+        padding-left: 20%;
 
     }
 }
