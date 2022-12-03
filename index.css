@@ -1664,19 +1664,14 @@ body {
 @media screen and (max-width: 1047px) {
 
 
-    .main-blog-cursos {
-        
-        min-height: 1500px;
-        padding: 20px;
-
-
+    .main-blog-cursos {        
+        min-height: 1500px;    
     }
 
     .main-blog-cursos div {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;        
     }
 
     .main-blog-cursos div article a {
