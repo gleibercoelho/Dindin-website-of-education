@@ -1708,6 +1708,7 @@ body {
         line-break: auto;
         padding-right: 25px;
         line-height: 25px;
+        text-align: center;
     }
 
     .main-blog-internal section span {
@@ -1719,14 +1720,14 @@ body {
     .main-blog-internal section img {
         width: 330px;
         height: 232px;
-        padding-right: 15px;
+        
     }
 
     .main-blog-internal section p {
         font-size: 12px;
         line-height: 15px;
         padding-right: 0px;
-        width: 300px;
+        width: 320px;
     }
 
     .main-blog-internal section h3 {
