@@ -317,7 +317,6 @@ body {
 .main-avaliacao {
     font-family: 'Segoe UI';
     height: 800px;
-    
     display: flex;
     flex-direction: column;
     padding-left: 128px;
@@ -336,12 +335,12 @@ body {
 }
 
 .main-avaliacao-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 120px;
+    display: grid;
+    width: 90vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding-right: 0px;
 }
 
 .main-avaliacao-div article {
@@ -447,7 +446,7 @@ body {
     padding: 11px 41px;
 }
 
-.main-blog .container .fotolink{
+.main-blog .container .fotolink {
     padding: 0;
     border: none;
 
@@ -492,7 +491,7 @@ body {
     height: 450px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     align-content: space-around;
 }
 
@@ -647,13 +646,13 @@ body {
 }
 
 .aulas-video iframe {
-    
+
     margin-top: 75px;
     margin-bottom: 75px;
     width: 426px;
     height: 261px;
     margin-left: 213px;
-    
+
 }
 
 .aulas-video h2 {
@@ -680,7 +679,7 @@ body {
 
 .aulas-video article {
     height: 409px;
-    
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -909,7 +908,7 @@ body {
     align-items: center;
     padding-left: 204px;
     padding-right: 204px;
-    
+
     flex-wrap: wrap;
 }
 
@@ -960,7 +959,7 @@ body {
     display: flex;
     flex-direction: column !important;
     flex-wrap: nowrap;
-    
+
     height: 899px;
     margin-top: 110px;
     background-color: #F7F7F7;
@@ -982,7 +981,7 @@ body {
     flex-wrap: nowrap;
     align-items: space-around;
     justify-content: space-around;
-    
+
     padding-left: 0;
     margin-left: 0;
 }
@@ -1362,8 +1361,6 @@ body {
     .main-avaliacao {
         width: 100%;
         height: 1180px;
-
-        padding-left: 25px;
         align-items: center;
         justify-items: center;
     }
@@ -1380,6 +1377,8 @@ body {
     .main-avaliacao-div {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        justify-items: center;
         padding-right: 0;
     }
 
@@ -1389,7 +1388,6 @@ body {
         align-items: center;
         margin-bottom: 20px;
         padding-right: 0px;
-        width: 345px;
     }
 
     .main-avaliacao img {
@@ -1664,14 +1662,14 @@ body {
 @media screen and (max-width: 1047px) {
 
 
-    .main-blog-cursos {        
-        min-height: 1500px;    
+    .main-blog-cursos {
+        min-height: 1500px;
     }
 
     .main-blog-cursos div {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
     }
 
     .main-blog-cursos div article a {
@@ -1714,13 +1712,13 @@ body {
     .main-blog-internal section span {
         font-size: 10px;
         margin-top: 6px;
-        
+
     }
 
     .main-blog-internal section img {
         width: 330px;
         height: 232px;
-        
+
     }
 
     .main-blog-internal section p {
@@ -1743,7 +1741,7 @@ body {
         align-items: center;
         width: 100%;
         min-height: 1250px;
-        
+
         flex-wrap: wrap;
         align-content: center;
     }
@@ -1759,13 +1757,13 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+
     }
 
     .main-blog-cursos div article {
         align-content: center;
         align-items: center;
-        
+
         margin-top: 30px;
     }
 
@@ -1810,6 +1808,16 @@ body {
 
 
 /* ------------------------------------- responsividade da pagina post do blog abaixo ----------------------*/
+
+@media screen and (min-width: 1903px) {
+    .blog-vitrine {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1f;
+        justify-items: center;
+        padding-right: 0px;
+    }
+}
 
 
 @media screen and (max-width: 1320px) {
